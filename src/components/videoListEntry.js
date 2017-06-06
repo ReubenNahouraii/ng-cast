@@ -4,7 +4,7 @@ angular.module('video-player')
     video: '<'
   },
   controller: function() {
-    console.log(this);
+    console.log('videoListEntry', this);
   },
   templateUrl: 'src/templates/videoListEntry.html'
 });
