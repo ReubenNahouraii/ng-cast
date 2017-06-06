@@ -1,10 +1,15 @@
 angular.module('video-player')
 .component('videoListEntry', {
   bindings: {
-    video: '<'
+    video: '<',
+    clicked: '<'
   },
   controller: function() {
-    console.log('videoListEntry', this);
+    this.handleClick = function() {
+      console.log('clicked!');
+      
+      this.clicked(this.video);
+    };
   },
   templateUrl: 'src/templates/videoListEntry.html'
 });
