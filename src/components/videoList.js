@@ -5,7 +5,6 @@ angular.module('video-player')
     clicked: '<'
   },
   controller: function() {
-    console.log('videoList', this);
   },
   templateUrl: 'src/templates/videoList.html'
   

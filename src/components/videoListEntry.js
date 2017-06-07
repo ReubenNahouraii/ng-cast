@@ -6,8 +6,6 @@ angular.module('video-player')
   },
   controller: function() {
     this.handleClick = function() {
-      console.log('clicked!');
-      
       this.clicked(this.video);
     };
   },

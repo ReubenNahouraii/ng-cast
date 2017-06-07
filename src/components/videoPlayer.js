@@ -7,8 +7,5 @@ angular.module('video-player')
   templateUrl: 'src/templates/videoPlayer.html',
   controller: function() {
     
-    console.log(this);
-
-    
   }
 });
