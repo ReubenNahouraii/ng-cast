@@ -1,12 +1,13 @@
 angular.module('video-player')
 .service('youTube', function($http) {
   this.getVideos = function(options) {
+    debugger;
     return $http({
       method: 'GET',
       url: 'https://www.googleapis.com/youtube/v3/search',
       data: {
         key: options.key,
-        q: options.query,
+        q: options.q,
         part: 'snippet',
         maxResults: options.max
       }
